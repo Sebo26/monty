@@ -33,6 +33,6 @@ typedef struct instruction_s
 } instruction_t;
 void push(int n);
 void pall();
-int pint();
-int isEmpty();
+int pint(stack_t **stack);
+int isEmpty(stack_t *stack);
 #endif

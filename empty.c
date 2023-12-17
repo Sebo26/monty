@@ -4,9 +4,9 @@
  * isEmpty - The function checks if a stack is empty
  * Return: 1(if empty) 0(not empty)
  */
-int isEmpty()
+int isEmpty(stack_t *stack)
 {
-	if(top == NULL)
+	if(stack == NULL)
 	{
 		return (1);
 	}
@@ -14,4 +14,5 @@ int isEmpty()
 	{
 		return (0);
 	}
+return (0);
 }

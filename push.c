@@ -1,8 +1,6 @@
 #include "monty.h"
 #include <stdio.h>
 
-#ifndef PUSH_C
-#define PUSH_C
 /**
  * push - the function adds element to top of stack
  * * @n: the element that will be added.
@@ -26,4 +24,3 @@ if (stack != NULL)
 }
 stack = newNode;
 }
-#endif
