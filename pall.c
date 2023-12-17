@@ -1,6 +1,8 @@
 #include "monty.h"
 #include <stdio.h>
 
+#ifndef PALL_C
+#define PALL_C
 /**
  * pall - the function prints items of stack.
  * @stack: double pointer to the stack.
@@ -23,3 +25,4 @@ else
 	}
 }
 }
+#endif
