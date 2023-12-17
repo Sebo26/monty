@@ -10,7 +10,7 @@ int pop(stack_t **stack)
 int n;
 static unsigned int line_number = 1;
 stack_t *temp = *stack;
-if(isEmpty(*stack))
+if (isEmpty(*stack))
 {
 	line_number++;
 	fprintf(stderr, "L%d: can't pop, stack empty\n", line_number);
@@ -24,6 +24,6 @@ else
 	free(temp);
 	temp = NULL;
 	line_number++;
-	return n;
+	return (n);
 }
 }
