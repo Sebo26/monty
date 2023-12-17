@@ -11,12 +11,14 @@ stack_t *second = first->next;
 unsigned int line_number = 0;
 if (*stack == NULL || (*stack)->next == NULL)
 {
+	line_number++;
 	fprintf(stderr, "L%d: can't swap, stack too short\n", line_number);
 	exit(EXIT_FAILURE);
 }
-
-first->next = second->next;
-second->next = first;
-*stack = second;
-line_number++;
+else
+{
+	first->next = second->next;
+	second->next = first;
+	*stack = second;
+}
 }

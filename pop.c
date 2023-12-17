@@ -7,15 +7,17 @@
  */
 int pop(stack_t **stack)
 {
-	int n;
-	static unsigned int line_number = 1;
-	stack_t *temp = *stack;
-	if(isEmpty(*stack))
-	{
-		fprintf(stderr, "L%d: can't pop, stack empty\n", line_number);
-		exit(EXIT_FAILURE);
-	}
-
+int n;
+static unsigned int line_number = 1;
+stack_t *temp = *stack;
+if(isEmpty(*stack))
+{
+	line_number++;
+	fprintf(stderr, "L%d: can't pop, stack empty\n", line_number);
+	exit(EXIT_FAILURE);
+}
+else
+{
 	n = (*stack)->n;
 
 	*stack = (*stack)->next;
@@ -23,4 +25,5 @@ int pop(stack_t **stack)
 	temp = NULL;
 	line_number++;
 	return n;
+}
 }
