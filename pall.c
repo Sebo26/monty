@@ -7,15 +7,15 @@
  */
 void pall()
 {
-stack_t *temp;
-if ((stack) == NULL)
+static stack_t *stack = NULL;
+stack_t *temp = stack;
+if (temp == NULL)
 {
 	fprintf(stderr, "Stack underflow\n");
 	exit(EXIT_FAILURE);
 }
 else
 {
-	temp = stack;
 	while (temp)
 	{
 		printf("%d\n", temp->n);
