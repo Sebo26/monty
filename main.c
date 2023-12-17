@@ -8,9 +8,6 @@
  */
 int main(void)
 {
-	push(1);
-	pall();
-	isEmpty(stack);
-	pint(&stack);
+	
 	return (0);
 }

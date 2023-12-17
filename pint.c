@@ -2,7 +2,9 @@
 #include <stdio.h>
 
 /**
- * pint - The function prints the value at the top of the stack and newline. * Return: 0 (Success)
+ * pint - The function prints the value at the top of the stack and newline.
+ * @stack: double pointer to the top of the stack
+ * Return: 0 (Success)
  */
 int pint(stack_t **stack)
 {

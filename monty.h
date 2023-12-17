@@ -35,4 +35,6 @@ void push(int n);
 void pall();
 int pint(stack_t **stack);
 int isEmpty(stack_t *stack);
+void swap(stack_t **stack);
+int pop(stack_t **stack);
 #endif

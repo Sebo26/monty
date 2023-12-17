@@ -2,6 +2,7 @@
 
 /**
  * pop - the function removes the top element of the stack.
+ * @stack: double pointer to the top of the stack
  * Return: value that will be deleted.
  */
 int pop(stack_t **stack)

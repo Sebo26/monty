@@ -3,7 +3,6 @@
 
 /**
  * pall - the function prints items of stack.
- * @stack: double pointer to the stack.
  */
 void pall()
 {

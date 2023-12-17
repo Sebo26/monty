@@ -3,7 +3,7 @@
 
 /**
  * push - the function adds element to top of stack
- * * @n: the element that will be added.
+ * @n: the element that will be added.
  */
 void push(int n)
 {
